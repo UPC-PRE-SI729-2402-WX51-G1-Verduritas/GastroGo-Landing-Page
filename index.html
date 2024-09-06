@@ -41,6 +41,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <div class="logo-container" role="banner">
+            <a href="index.html">
+                <img src="./assets/images/logo-gastrogo.png" alt="GastroGo Logo" aria-label="GastroGo Logo">
+                <h1 href="index.html">GASTROGO</h1>
+            </a>
+        </div>
+        <div id="mobile-menu" class="menu-toggle" aria-label="Mobile Menu Toggle" aria-expanded="false" aria-controls="nav-menu" role="button" tabindex="0">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav role="navigation">
+            <ul id="nav-menu" aria-label="Main Navigation">
+                <li><a href="#about-us">About us</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#plans">Our Plans</a></li>
+                <li><a href="#contact-us">Contact us</a></li>
+                <li><a href="#try-now" class="btn-try-now" role="button" aria-label="Try now">Try now!</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <script src="./scripts/scripts.js"></script>
 </body>
 </html>
