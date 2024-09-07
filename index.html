@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastro-Go - Corporate ordering platform</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="description" content="Discover the best local restaurants at the palm of your hand and order a good meal for you and your team with GastroGo!">
+    <meta name="keywords" content="local restaurants, online ordering, food delivery, GastroGo">
+    <meta name="author" content="GastroGo">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Bootstrap -->  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Font Api -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        
+        <div class="language-bar">
+            <button class="lang-btn" id="lang-es" onclick="changeLanguage('es')">Español - ES</button>
+            <button class="lang-btn" id="lang-en" onclick="changeLanguage('en')">English - EN</button>
+        </div>
+
+        <div class="logo-container" role="banner">
+            <a href="index.html">
+                <img src="./assets/images/logo-gastrogo.png" alt="GastroGo Logo" aria-label="GastroGo Logo">
+                <h1 href="index.html">GASTROGO</h1>
+            </a>
+        </div>
+
+        <div id="mobile-menu" class="menu-toggle" aria-label="Mobile Menu Toggle" aria-expanded="false" aria-controls="nav-menu" role="button" tabindex="0">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <nav role="navigation">
+            <ul id="nav-menu" aria-label="Main Navigation">
+                <li><a href="#about-us">About us</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#plans">Our Plans</a></li>
+                <li><a href="#contact-us">Contact us</a></li>
+                <li><a href="#try-now" class="btn-try-now" role="button" aria-label="Try now">Try now!</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="hero" role="region" aria-labelledby="hero-heading">
+            <div class="hero-content">
+                <h1 id="hero-heading">Transform your meals into a flavoury experience beyond your imaginations and get it quickly!</h1>
+                
+                <div class="hero-buttons">
+                    <a href="#know-more" class="btn-know-more" role="button" aria-label="Know more">Know more</a>
+                    <a href="#why-us" class="btn-why-us" role="button" aria-label="Why us?">Why us?</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <section id="about-us" class="about-section full-screen-section" aria-label="About us section">
+        <div class="container text-center">
+            <h2 aria-label="About us heading">About us</h2>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-8 col-lg-7 mb-4">
+                    <iframe 
+                        width="100%" 
+                        height="400" 
+                        src="https://www.youtube.com/embed/D9bwnJclcas" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen 
+                        aria-label="Video about DevDynasty company introduction"
+                    ></iframe>
+                </div>
+                <div class="col-md-8 col-lg-5 d-flex align-items-center">
+                    <p aria-label="Description of DevDynasty">We are DevDynasty, a new startup focused on upgrading and innovating the field of gastronomy with new technologies. We want to provide a trustworthy interaction with our clients for the sake of a great experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us" class="why-us-section full-screen-section" aria-label="Why us section">
+        <div class="container text-center">
+            <h2 aria-label="Why us heading">Why us?</h2>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-8 col-lg-7 mb-4">
+                    <iframe 
+                        width="100%" 
+                        height="400" 
+                        src="https://www.youtube.com/embed/NI8MX4TbqRo" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen 
+                        aria-label="Video explaining why you should choose GastroGo"
+                    ></iframe>
+                </div>
+                <div class="col-md-8 col-lg-5 d-flex align-items-center">
+                    <p aria-label="Description of GastroGo service">Transform the shape of your lunch hour with an explosion of flavors at the click of a button. We provide a wide range of restaurants available for all tastes. GastroGo offers you a digital and intuitive solution to make ordering quick and easy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="container-fluid containerf">
+        <h1 class="text-center features-title">Features</h1>
+        <div class="row mx-auto rowf">
+            <div class="col-md-6 columna1">
+                <b><p class="text-center">For workers</p></b>
+                <ul class="features-list">
+                    <li>Order your food according to what your team wants!</li>
+                    <li>Get the important information of the restaurant that caught your attention.</li>
+                    <li>Don’t worry about dividing the bill! GastroGo will do it for you.</li>
+                    <li>Need to remove some ingredients because of allergies? You can remove them in just a click!</li>
+                    <li>Get the latest recommendations according to your previous orders.</li>
+                </ul>
+                <div class="image">
+                    <img src="./assets/images/workers.jpg" alt="workers">
+                </div>
+            </div>
+            <div class="col-md-6 columna2">
+                <b><p class="text-center">For restaurants</p></b>
+                <ul class="features-list">
+                    <li>GastroGo will show you all the orders in order, to avoid confusions.</li>
+                    <li>Too many orders already in the kitchen? GastroGo allows you to reject orders after checking what they include!</li>
+                    <li>We provide you a tracker for each order. If it gets cancelled or changed, you will be notified asap!</li>
+                </ul>
+                <div class="image">
+                    <img src="./assets/images/restaurant.jpg" alt="restaurant">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="container-fluid containerh">
+        <h1 class="text-center how-title">How it works?</h1>
+        <div class="row mx-auto text-center rowh align-items-center">
+            <div class="col-md-2 d-flex flex-column align-items-center step">
+                <img src="./assets/images/step1.jpeg" alt="Step 1" class="img-fluid mb-2 step-img">
+                <b><p class="step-text">Select the restaurant and what menu would your team want</p></b>
+            </div>
+            <div class="col-md-1 d-flex justify-content-center align-items-center">
+                <img src="./assets/images/arrow-right.png" alt="Arrow" class="arrow-img">
+            </div>
+            <div class="col-md-2 d-flex flex-column align-items-center step">
+                <img src="./assets/images/step2.jpg" alt="Step 2" class="img-fluid mb-2 step-img">
+                <b><p class="step-text">Personalize your order according to your taste</p></b>
+            </div>
+            <div class="col-md-1 d-flex justify-content-center align-items-center">
+                <img src="./assets/images/arrow-right.png" alt="Arrow" class="arrow-img">
+            </div>
+            <div class="col-md-2 d-flex flex-column align-items-center step">
+                <img src="./assets/images/step3.jpg" alt="Step 3" class="img-fluid mb-2 step-img">
+                <b><p class="step-text">Confirm your order and send it!</p></b>
+            </div>
+            <div class="col-md-1 d-flex justify-content-center align-items-center">
+                <img src="./assets/images/arrow-right.png" alt="Arrow" class="arrow-img">
+            </div>
+            <div class="col-md-2 d-flex flex-column align-items-center step">
+                <img src="./assets/images/step4.jpeg" alt="Step 4" class="img-fluid mb-2 step-img">
+                <b><p class="step-text">The delivery will go immediately to you. Enjoy!</p></b>
+            </div>
+        </div>
+    </section>
+    
+    <section id="experiences" class="container1">
+        <h1 class="page-title2">We provide the best experience for you</h1>
+        <div class="experience">
+            <div class="experience-card">
+                <img src="./assets/images/experience-1.jpeg" alt="Experience 1">
+                <div class="experience-card-content">
+                    <h3>Maria Prado - BBVA</h3>
+                    <p>“My coworkers and I found the experience amazing! We could choose
+                    any restaurant but we had to settle with one. I kid you not, it was so
+                    fresh, that means they didn’t take long to bring it. Loved it!”</p>
+                </div>
+                <img class="stars" src="./assets/images/stars.png" alt="stars">
+            </div>
+            <div class="experience-card">
+                <img src="./assets/images/experience-2.jpg" alt="Experience 2">
+                <div class="experience-card-content">
+                    <h3>Paola Cuellar - La Mar</h3>
+                    <p>“Ever since I began using GastroGo to increase my amount of clients,
+                    I did not think it would work out so well! Just in the first three months,
+                    I am seeing the earnings increase up to 50% more. It’s amazing!”</p>
+                </div>
+                <img class="stars" src="./assets/images/stars.png" alt="stars">
+            </div>
+        </div>
+    </section>
+    
+    <div class="container2" id="plans">
+        <h1 class="page-title">Our plans</h1>
+        <div class="membership">
+            <div class="membership-card">
+                <h3>Basic</h3>
+                <img src="./assets/images/membership1.jpeg" alt="Membership 1">
+                <div class="membership-card-content">
+                    <ul>
+                        <li>You will have all the features available.</li>
+                    </ul>
+                    <ul>
+                        <li>Up to 8 people.</li>
+                    </ul>
+                    <ul>
+                        <li>Have special and exclusive discounts and offers for you!</li>
+                    </ul>
+                </div>
+                <div class="price">Free</div>
+            </div>
+            <div class="membership-card">
+                <h3>Big Team</h3>
+                <img src="./assets/images/membership2.jpeg" alt="Membership 2">
+                <div class="membership-card-content">
+                    <ul>
+                        <li>You will have all the features available.</li>
+                    </ul>
+                    <ul>
+                        <li>Up to 30 people.</li>
+                    </ul>
+                    <ul>
+                        <li>Have special and exclusive discounts and offers for your team!</li>
+                    </ul>
+                </div>
+                <div class="price">S/.200 / Monthly</div>
+            </div>
+            <div class="membership-card">
+                <h3>Restaurants</h3>
+                <img src="./assets/images/membership3.jpeg" alt="Membership 3">
+                <div class="membership-card-content">
+                    <ul>
+                        <li>Advertise your restaurant with us!</li>
+                    </ul>
+                    <ul>
+                        <li>Have an in-real time tracker for each order to avoid issues.</li>
+                    </ul>
+                    <ul>
+                        <li>Prioritize large groups of orders.</li>
+                    </ul>
+                </div>
+                <div class="price">S/.400 / Monthly</div>
+            </div>
+        </div>
+        <button class="button">Get Now</button>
+    </div>
+
+    <div id="contact-us">
+        <div class="contact-us-title">
+        <h3 class="roboto-bold">Contact us</h3>
+        </div>
+
+        <div class="contact-us-content">
+
+        <img src="./assets/images/team-workers.jpg" class="contact-us-image">
+
+
+        <form class="contact-us-form">
+
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required aria-label="Enter your first name.">
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required aria-label="Enter your last name.">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required aria-label="Enter your email address.">
+
+            <label for="details">Details</label>
+            <textarea id="details" name="details" required aria-label="Enter the details you might want."></textarea>
+
+            <button type="submit" class="contact-us-button">Send</button>
+        </form>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-column">
+            <h4 class="roboto-bold">Follow Us</h4>
+            <div class="icons-media">
+                <a href="https://facebook.com/" target="_blank">
+                    <img src="./assets/images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://instagram.com/" target="_blank">
+                    <img src="./assets/images/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://x.com/" target="_blank">
+                    <img src="./assets/images/x.png" alt="X (previously known as Twitter)">
+                </a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h4 class="roboto-bold">Content</h4>
+            <ul>
+                <li><a href="#about-us">About us</a></li>
+            </ul>
+            <ul>
+                <li><a href="#why-us">Why us?</a></li>
+            </ul>
+            <ul>
+                <li><a href="#features">Features</a></li>
+            </ul>
+            <ul>
+                <li><a href="#how-it-works">How it works?</a></li>
+            </ul>
+            <ul>
+                <li><a href="#experiences">Experiences</a></li>
+            </ul>
+            <ul>
+                <li><a href="#plans">Our Plans</a></li>
+            </ul>
+            <ul>
+                <li><a href="#contact-us">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4 class="roboto-bold">Subscribe to Our Newsletter</h4>
+            <p>Receive the latest news and updates about the application along with special discounts available.</p>
+            <form>
+                <input type="email" placeholder="youremail@example.com" required>
+                <button type="submit"><img src="./assets/images/send.png" alt="Send"></button>
+            </form>
+        </div>
+    </footer>
+    <div class="footer-startup">
+        © Verduritas. All rights reserved.
+    </div>
+    
+    <script src="./scripts/scripts.js"></script>
+</body>
+</html>
