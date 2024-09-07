@@ -724,3 +724,49 @@ body {
 .btn:hover {
   background-color: #cecece;
 }
+
+/*Contact Us*/
+
+.contact-us-title {
+  text-align: center;
+  padding: 40px 20px 20px 20px;
+  background-color: var(--third-color);
+  color: var(--black);
+}
+
+.contact-us-content {
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 20px 20px 50px 20px;
+background-color: var(--third-color);
+}
+
+.contact-us-image {
+width: 45%;
+border-radius: 5px;
+}
+
+.contact-us-form {
+width: 45%;
+margin-left: 20px;
+display: flex;
+flex-direction: column;
+}
+
+.contact-us-form input, .contact-form textarea {
+margin-bottom: 10px;
+padding: 10px;
+border-radius: 5px;
+border: 1px solid var(--principal-color);
+}
+
+.contact-us-button {
+background-color: var(--secondary-color);
+color: var(--white);
+padding: 10px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 10px;
+}
