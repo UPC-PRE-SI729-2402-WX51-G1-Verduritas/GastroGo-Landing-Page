@@ -241,3 +241,52 @@ nav ul li a {
   }
   
 }
+
+/*CSS  introduction*/
+.hero {
+  background-image: url('../assets/images/backgroung-introduction.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 86vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  margin: 0;
+  box-sizing: border-box; 
+  overflow: hidden; 
+}
+
+.hero-content {
+  max-width: 900px; 
+  padding: 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.1rem; 
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.3;
+  margin-bottom: 20px;
+  text-align: center;
+  max-width: 800px; 
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px; 
+}
+
+.hero-buttons a {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 50px; 
+}
