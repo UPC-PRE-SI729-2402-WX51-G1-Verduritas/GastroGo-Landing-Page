@@ -445,7 +445,9 @@ ul li a {
 .container.text-center h2 {
   margin-bottom: 40px;
     
-    /*Feature Section*/
+}   
+
+/*Feature Section*/
 
 .features-list {
   list-style-type: disc;  
@@ -493,5 +495,5 @@ ul li a {
   padding: 50px 0;
   align-items: stretch;  
 }
-}
+
 
