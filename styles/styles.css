@@ -242,7 +242,7 @@ nav ul li a {
   
 }
 
-/*CSS  introduction*/
+/*Introduction Section*/
 .hero {
   background-image: url('../assets/images/backgroung-introduction.jpg'); 
   background-size: cover;
@@ -289,4 +289,52 @@ nav ul li a {
   font-size: 18px;
   font-weight: 500;
   margin: 0 50px; 
+}
+
+/*Language Section*/
+.language-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #165873; 
+  padding: 10px; 
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 1000; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.lang-btn {
+  background-color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.lang-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  transform: translateY(25px);
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #000;
 }
