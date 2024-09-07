@@ -42,17 +42,25 @@
 </head>
 <body>
     <header>
+        
+        <div class="language-bar">
+            <button class="lang-btn" id="lang-es" onclick="changeLanguage('es')">Español - ES</button>
+            <button class="lang-btn" id="lang-en" onclick="changeLanguage('en')">English - EN</button>
+        </div>
+
         <div class="logo-container" role="banner">
             <a href="index.html">
                 <img src="./assets/images/logo-gastrogo.png" alt="GastroGo Logo" aria-label="GastroGo Logo">
                 <h1 href="index.html">GASTROGO</h1>
             </a>
         </div>
+
         <div id="mobile-menu" class="menu-toggle" aria-label="Mobile Menu Toggle" aria-expanded="false" aria-controls="nav-menu" role="button" tabindex="0">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
+
         <nav role="navigation">
             <ul id="nav-menu" aria-label="Main Navigation">
                 <li><a href="#about-us">About us</a></li>
@@ -62,6 +70,7 @@
                 <li><a href="#try-now" class="btn-try-now" role="button" aria-label="Try now">Try now!</a></li>
             </ul>
         </nav>
+
     </header>
 
     <main>
