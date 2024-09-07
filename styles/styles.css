@@ -770,3 +770,134 @@ border-radius: 5px;
 cursor: pointer;
 margin-top: 10px;
 }
+
+/*Footer*/
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: var(--principal-color);
+  color: var(--white);
+}
+
+.footer-column {
+  width: 30%;
+}
+
+.icons-media a img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+.footer-column li {
+  margin-bottom: 5px;
+}
+
+.footer-column form {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.footer-column form input {
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  width: 70%;
+  box-sizing: border-box;
+  max-width: calc(100% - 60px);
+}
+
+.footer-column form button {
+  background-color: var(--sixth-color);
+  border: none;
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  box-sizing: border-box;
+}
+
+.footer-column form button img {
+  width: 20px;
+  height: auto;
+}
+
+a:link {
+  color: var(--white);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--white);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.footer-startup {
+  background-color: var(--sixth-color);
+  color: var(--white);
+  text-align: center;
+  padding: 25px 0;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-column form {
+    flex-direction: column;
+  }
+
+  .footer-column form input {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .footer-column form button {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .contact-us-content {
+    flex-direction: column;
+  }
+
+  .contact-us-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contact-us-form {
+    width: 100%;
+    margin-left: 0;
+  }
+
+}
