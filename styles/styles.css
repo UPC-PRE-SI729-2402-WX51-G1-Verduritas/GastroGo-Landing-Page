@@ -615,4 +615,112 @@ body {
   margin-top: auto;
 }
 
+/*Plans*/
 
+.container2{
+  background-color: #1C8DA6;
+  color: #1C8DA6;
+  padding: 50px;
+}
+
+.page-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  margin-top: 50px;
+  color: #ffffff;
+}
+
+
+.membership {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+  flex-wrap: wrap;
+}
+
+.membership-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 310px;
+  padding-top: 10px;
+  background-color: #FAB091;
+  border: 1px solid #FAB091;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.membership-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 auto; 
+}
+
+.membership-card-content {
+  padding: 20px;
+  text-align: left;
+  color: black;
+  flex-grow: 1;
+}
+
+.price {
+  color: black;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #FFE6D8; 
+  margin-top: auto;
+}
+
+
+.membership-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.membership-card h3 {
+  margin-top: 0;
+  color: #333;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.membership-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 auto; 
+}
+
+.membership-card p {
+  color: #666;
+}
+
+.button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  display: block;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background-color: #FF7338;
+  color: #000000;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-color: #FF7338;
+}
+
+.btn:hover {
+  background-color: #cecece;
+}
