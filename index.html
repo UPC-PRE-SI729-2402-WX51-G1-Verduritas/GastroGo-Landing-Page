@@ -44,8 +44,8 @@
     <header>
         
         <div class="language-bar">
-            <button class="lang-btn" id="lang-es" onclick="changeLanguage('es')">Español - ES</button>
-            <button class="lang-btn" id="lang-en" onclick="changeLanguage('en')">English - EN</button>
+            <button class="lang-btn" id="lang-es" aria-label="Select Spanish Language" onclick="changeLanguage('es')">Español - ES</button>
+            <button class="lang-btn" id="lang-en" aria-label="Select English Language" onclick="changeLanguage('en')">English - EN</button>
         </div>
 
         <div class="logo-container" role="banner">
@@ -63,10 +63,10 @@
 
         <nav role="navigation">
             <ul id="nav-menu" aria-label="Main Navigation">
-                <li><a href="#about-us">About us</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#plans">Our Plans</a></li>
-                <li><a href="#contact-us">Contact us</a></li>
+                <li><a href="#about-us " aria-label="Learn more about us">About us</a></li>
+                <li><a href="#features" aria-label="Explore our features">Features</a></li>
+                <li><a href="#plans" aria-label="Discover our plans">Our Plans</a></li>
+                <li><a href="#contact-us" aria-label="Contact us for more information">Contact us</a></li>
                 <li><a href="#try-now" class="btn-try-now" role="button" aria-label="Try now">Try now!</a></li>
             </ul>
         </nav>
@@ -100,11 +100,11 @@
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                         allowfullscreen 
-                        aria-label="Video about DevDynasty company introduction"
+                        aria-label="Video about Verduritas company introduction"
                     ></iframe>
                 </div>
                 <div class="col-md-8 col-lg-5 d-flex align-items-center">
-                    <p aria-label="Description of DevDynasty">We are DevDynasty, a new startup focused on upgrading and innovating the field of gastronomy with new technologies. We want to provide a trustworthy interaction with our clients for the sake of a great experience.</p>
+                    <p aria-label="Description of Verduritas">We are Verduritas, a new startup focused on upgrading and innovating the field of gastronomy with new technologies. We want to provide a trustworthy interaction with our clients for the sake of a great experience.</p>
                 </div>
             </div>
         </div>
@@ -134,12 +134,12 @@
         </div>
     </section>
 
-    <section id="features" class="container-fluid containerf">
+    <section id="features" class="container-fluid containerf" aria-labelledby="features-title" aria-label="Features section">
         <h1 class="text-center features-title">Features</h1>
         <div class="row mx-auto rowf">
             <div class="col-md-6 columna1">
-                <b><p class="text-center">For workers</p></b>
-                <ul class="features-list">
+                <b><p class="text-center" aria-label="Features for workers heading">For workers</p></b>
+                <ul class="features-list" aria-label="Features list for workers">
                     <li>Order your food according to what your team wants!</li>
                     <li>Get the important information of the restaurant that caught your attention.</li>
                     <li>Don’t worry about dividing the bill! GastroGo will do it for you.</li>
@@ -147,58 +147,58 @@
                     <li>Get the latest recommendations according to your previous orders.</li>
                 </ul>
                 <div class="image">
-                    <img src="./assets/images/workers.jpg" alt="workers">
+                    <img src="./assets/images/workers.jpg" alt="workers" aria-label="Image of workers">
                 </div>
             </div>
             <div class="col-md-6 columna2">
-                <b><p class="text-center">For restaurants</p></b>
-                <ul class="features-list">
+                <b><p class="text-center" aria-label="Features for restaurants heading">For restaurants</p></b>
+                <ul class="features-list" aria-label="Features list for restaurants">
                     <li>GastroGo will show you all the orders in order, to avoid confusions.</li>
                     <li>Too many orders already in the kitchen? GastroGo allows you to reject orders after checking what they include!</li>
                     <li>We provide you a tracker for each order. If it gets cancelled or changed, you will be notified asap!</li>
                 </ul>
                 <div class="image">
-                    <img src="./assets/images/restaurant.jpg" alt="restaurant">
+                    <img src="./assets/images/restaurant.jpg" alt="restaurant" aria-label="Image of restaurant">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="how-it-works" class="container-fluid containerh">
+    <section id="how-it-works" class="container-fluid containerh" aria-labelledby="how-title" aria-label="How it works section">
         <h1 class="text-center how-title">How it works?</h1>
         <div class="row mx-auto text-center rowh align-items-center">
             <div class="col-md-2 d-flex flex-column align-items-center step">
-                <img src="./assets/images/step1.jpeg" alt="Step 1" class="img-fluid mb-2 step-img">
-                <b><p class="step-text">Select the restaurant and what menu would your team want</p></b>
+                <img src="./assets/images/step1.jpeg" alt="Step 1" class="img-fluid mb-2 step-img" aria-label="Step 1 image">
+                <b><p class="step-text" aria-label="Step 1 description">Select the restaurant and what menu would your team want</p></b>
             </div>
             <div class="col-md-1 d-flex justify-content-center align-items-center">
-                <img src="./assets/images/arrow-right.png" alt="Arrow" class="arrow-img">
+                <img src="./assets/images/arrow-right.png" alt="Arrow" class="arrow-img"  aria-hidden="true">
             </div>
             <div class="col-md-2 d-flex flex-column align-items-center step">
-                <img src="./assets/images/step2.jpg" alt="Step 2" class="img-fluid mb-2 step-img">
+                <img src="./assets/images/step2.jpg" alt="Step 2" class="img-fluid mb-2 step-img" aria-label="Step 2 image">
                 <b><p class="step-text">Personalize your order according to your taste</p></b>
             </div>
             <div class="col-md-1 d-flex justify-content-center align-items-center">
-                <img src="./assets/images/arrow-right.png" alt="Arrow" class="arrow-img">
+                <img src="./assets/images/arrow-right.png" alt="Arrow" class="arrow-img" aria-hidden="true">
             </div>
             <div class="col-md-2 d-flex flex-column align-items-center step">
-                <img src="./assets/images/step3.jpg" alt="Step 3" class="img-fluid mb-2 step-img">
+                <img src="./assets/images/step3.jpg" alt="Step 3" class="img-fluid mb-2 step-img" aria-label="Step 3 image">
                 <b><p class="step-text">Confirm your order and send it!</p></b>
             </div>
             <div class="col-md-1 d-flex justify-content-center align-items-center">
-                <img src="./assets/images/arrow-right.png" alt="Arrow" class="arrow-img">
+                <img src="./assets/images/arrow-right.png" alt="Arrow" class="arrow-img" aria-hidden="true">
             </div>
             <div class="col-md-2 d-flex flex-column align-items-center step">
-                <img src="./assets/images/step4.jpeg" alt="Step 4" class="img-fluid mb-2 step-img">
+                <img src="./assets/images/step4.jpeg" alt="Step 4" class="img-fluid mb-2 step-img" aria-label="Step 4 image">
                 <b><p class="step-text">The delivery will go immediately to you. Enjoy!</p></b>
             </div>
         </div>
     </section>
     
-    <section id="experiences" class="container1">
+    <section id="experiences" class="container1" aria-labelledby="experience-title" aria-label="Customer experiences section">
         <h1 class="page-title2">We provide the best experience for you</h1>
         <div class="experience">
-            <div class="experience-card">
+            <div class="experience-card" aria-labelledby="maria-prado-exprience">
                 <img src="./assets/images/experience-1.jpeg" alt="Experience 1">
                 <div class="experience-card-content">
                     <h3>Maria Prado - BBVA</h3>
@@ -208,7 +208,7 @@
                 </div>
                 <img class="stars" src="./assets/images/stars.png" alt="stars">
             </div>
-            <div class="experience-card">
+            <div class="experience-card" aria-labelledby="paola-cuellar-experience">
                 <img src="./assets/images/experience-2.jpg" alt="Experience 2">
                 <div class="experience-card-content">
                     <h3>Paola Cuellar - La Mar</h3>
@@ -221,10 +221,10 @@
         </div>
     </section>
     
-    <div class="container2" id="plans">
+    <div class="container2" id="plans" aria-labelledby="plans-title" aria-label="Plans section">
         <h1 class="page-title">Our plans</h1>
-        <div class="membership">
-            <div class="membership-card">
+        <div class="membership" aria-label="Membership plans">
+            <div class="membership-card" aria-labelledby="basic-plan-title">
                 <h3>Basic</h3>
                 <img src="./assets/images/membership1.jpeg" alt="Membership 1">
                 <div class="membership-card-content">
@@ -240,7 +240,7 @@
                 </div>
                 <div class="price">Free</div>
             </div>
-            <div class="membership-card">
+            <div class="membership-card" aria-labelledby="big-team-plan-title">
                 <h3>Big Team</h3>
                 <img src="./assets/images/membership2.jpeg" alt="Membership 2">
                 <div class="membership-card-content">
@@ -256,7 +256,7 @@
                 </div>
                 <div class="price">S/.200 / Monthly</div>
             </div>
-            <div class="membership-card">
+            <div class="membership-card" aria-labelledby="restaurants-plan-title">
                 <h3>Restaurants</h3>
                 <img src="./assets/images/membership3.jpeg" alt="Membership 3">
                 <div class="membership-card-content">
@@ -273,17 +273,17 @@
                 <div class="price">S/.400 / Monthly</div>
             </div>
         </div>
-        <button class="button">Get Now</button>
+        <button class="button" aria-label="Get the membership plans now">Get Now</button>
     </div>
 
-    <div id="contact-us">
+    <div id="contact-us"  aria-labelledby="contact-us-title" aria-label="Contact us section">
         <div class="contact-us-title">
         <h3 class="roboto-bold">Contact us</h3>
         </div>
 
         <div class="contact-us-content">
 
-        <img src="./assets/images/team-workers.jpg" class="contact-us-image">
+        <img src="./assets/images/team-workers.jpg" class="contact-us-image" aria-label="Team of workers image">
 
 
         <form class="contact-us-form">
@@ -300,61 +300,61 @@
             <label for="details">Details</label>
             <textarea id="details" name="details" required aria-label="Enter the details you might want."></textarea>
 
-            <button type="submit" class="contact-us-button">Send</button>
+            <button type="submit" class="contact-us-button" aria-label="Send the contact form">Send</button>
         </form>
 
         </div>
     </div>
 
-    <footer class="footer">
+    <footer class="footer" aria-labelledby="footer-title">
         <div class="footer-column">
             <h4 class="roboto-bold">Follow Us</h4>
             <div class="icons-media">
-                <a href="https://facebook.com/" target="_blank">
+                <a href="https://facebook.com/" target="_blank" aria-label="Follow us on Facebook">
                     <img src="./assets/images/facebook.png" alt="Facebook">
                 </a>
-                <a href="https://instagram.com/" target="_blank">
+                <a href="https://instagram.com/" target="_blank" aria-label="Follow us on Instagram">
                     <img src="./assets/images/instagram.png" alt="Instagram">
                 </a>
                 <a href="https://x.com/" target="_blank">
-                    <img src="./assets/images/x.png" alt="X (previously known as Twitter)">
+                    <img src="./assets/images/x.png" alt="X (previously known as Twitter)" aria-label="Follow us on X (formerly Twitter)">
                 </a>
             </div>
         </div>
         <div class="footer-column">
             <h4 class="roboto-bold">Content</h4>
             <ul>
-                <li><a href="#about-us">About us</a></li>
+                <li><a href="#about-us" aria-label="About us section">About us</a></li>
             </ul>
             <ul>
-                <li><a href="#why-us">Why us?</a></li>
+                <li><a href="#why-us" aria-label="Why us section">Why us?</a></li>
             </ul>
             <ul>
-                <li><a href="#features">Features</a></li>
+                <li><a href="#features"aria-label="Features section">Features</a></li>
             </ul>
             <ul>
-                <li><a href="#how-it-works">How it works?</a></li>
+                <li><a href="#how-it-works" aria-label="How it works section">How it works?</a></li>
             </ul>
             <ul>
-                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#experiences" aria-label="Experiences section">Experiences</a></li>
             </ul>
             <ul>
-                <li><a href="#plans">Our Plans</a></li>
+                <li><a href="#plans" aria-label="Our Plans section">Our Plans</a></li>
             </ul>
             <ul>
-                <li><a href="#contact-us">Contact us</a></li>
+                <li><a href="#contact-us" aria-label="Contact us section">Contact us</a></li>
             </ul>
         </div>
         <div class="footer-column">
             <h4 class="roboto-bold">Subscribe to Our Newsletter</h4>
             <p>Receive the latest news and updates about the application along with special discounts available.</p>
-            <form>
-                <input type="email" placeholder="youremail@example.com" required>
-                <button type="submit"><img src="./assets/images/send.png" alt="Send"></button>
+            <form aria-labelledby="newsletter-form-title">
+                <input type="email" placeholder="youremail@example.com" required aria-required="true" aria-label="Enter your email address to subscribe to the newsletter" >
+                <button type="submit" aria-label="Send newsletter subscription"><img src="./assets/images/send.png" alt="Send"></button>
             </form>
         </div>
     </footer>
-    <div class="footer-startup">
+    <div class="footer-startup" aria-label="Copyright notice">
         © Verduritas. All rights reserved.
     </div>
     
